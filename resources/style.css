@@ -1,0 +1,113 @@
+/* Base font */
+html,
+body {
+	font-family: Helvetica, sans-serif;
+	font-size: 16px;
+	margin: 0;
+	background-color: white;
+}
+
+/* Top bar */
+nav {
+	width: auto;
+	background-color: black;
+	color: white;
+	padding: 1% 0px;
+	padding-left: 10%;
+}
+
+nav #logo {
+	display: flex;
+	align-items: center;
+}
+
+nav #logo img {
+	width: auto;
+	height: 1.5em;
+	padding-right: 1.25em;
+}
+
+/* Splash */
+#splash {
+	height: 25rem;
+	background-image: url('moto.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	display: flex;
+	align-items: center;
+}
+
+
+#splash article{
+	background-color: black;
+	color: white;
+	margin: 0px 10%;
+	width: 20rem;
+	padding: 2.5rem 2.5rem;
+	font-size: 2rem;
+}
+
+#splash article h2{
+	font-size: 1.5rem;
+	padding: 1rem 0px;
+}
+
+/* Product Strip */
+#strip{
+	background-color: firebrick;
+	width: auto;
+	height: auto;
+	display: flex;
+	align-content: center;
+	padding: 0px 10%;
+	justify-content: space-between;
+	text-align: center;	
+}
+
+#strip p{
+	padding: 1rem 0px;
+	color: white;
+	font-size: 1.1rem;
+}
+
+/* Gallery */
+
+#gallery{
+	display: flex;
+	align-content: center;
+	justify-content: space-between;
+	margin: 0px 10%;
+	padding: 2rem 0px;
+}
+
+#gallery article{
+	border: solid black 2px;
+	display: flex;
+	flex-flow: column nowrap;
+	justify-content: space-between;
+	align-items: center;
+	width: 300px;
+	height: 300px;
+}
+
+#gallery article img{
+	object-fit: scale-down;
+	width: 65%;
+	height: 65%;
+	flex-grow: 1;
+
+}
+
+#gallery article p{
+	background-color: black;
+	color: white;
+	width: 100%;
+	text-align: center;
+	padding: 1rem 0px;
+
+}
+
+
+
+
