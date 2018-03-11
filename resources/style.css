@@ -2,7 +2,7 @@
 html,
 body {
 	font-family: Helvetica, sans-serif;
-	font-size: 16px;
+	font-size: 18px;
 	margin: 0;
 	background-color: white;
 }
@@ -12,7 +12,7 @@ nav {
 	width: auto;
 	background-color: black;
 	color: white;
-	padding: 1% 0px;
+	padding: .66rem 0px;
 	padding-left: 10%;
 }
 
@@ -23,8 +23,9 @@ nav #logo {
 
 nav #logo img {
 	width: auto;
-	height: 1.5em;
-	padding-right: 1.25em;
+	height: 1.5rem;
+	padding-left: 1rem;
+	padding-right: .5rem;
 }
 
 /* Splash */
@@ -38,23 +39,23 @@ nav #logo img {
 	align-items: center;
 }
 
-
-#splash article{
+#splash article {
 	background-color: black;
 	color: white;
 	margin: 0px 10%;
 	width: 20rem;
-	padding: 2.5rem 2.5rem;
+	padding: 2rem 3rem;
 	font-size: 2rem;
 }
 
-#splash article h2{
-	font-size: 1.5rem;
-	padding: 1rem 0px;
+#splash article h2 {
+	font-size: 1rem;
+	font-weight: bold;
+	padding-bottom: .25rem;
 }
 
 /* Product Strip */
-#strip{
+#strip {
 	background-color: firebrick;
 	width: auto;
 	height: auto;
@@ -62,52 +63,182 @@ nav #logo img {
 	align-content: center;
 	padding: 0px 10%;
 	justify-content: space-between;
-	text-align: center;	
+	text-align: center;
 }
 
-#strip p{
-	padding: 1rem 0px;
+#strip p {
+	padding: .75rem 0px;
 	color: white;
 	font-size: 1.1rem;
 }
 
-/* Gallery */
+#strip #menu {
+	display: none;
+}
 
-#gallery{
+/* Gallery */
+#gallery {
 	display: flex;
 	align-content: center;
 	justify-content: space-between;
-	margin: 0px 10%;
-	padding: 2rem 0px;
+	padding: 3rem 10%;
+	font-size: 1.1rem;
 }
 
-#gallery article{
+#gallery article {
 	border: solid black 2px;
 	display: flex;
 	flex-flow: column nowrap;
 	justify-content: space-between;
 	align-items: center;
-	width: 300px;
-	height: 300px;
+	width: 30%;
 }
 
-#gallery article img{
+#gallery article img {
+	height: 9rem;
+	padding: 2rem 0px;
+	width: 75%;
 	object-fit: scale-down;
-	width: 65%;
-	height: 65%;
-	flex-grow: 1;
-
 }
 
-#gallery article p{
+#gallery article p {
 	background-color: black;
 	color: white;
 	width: 100%;
 	text-align: center;
 	padding: 1rem 0px;
+}
+
+/* Info */
+#info {
+	display: flex;
+	justify-content: space-between;
+	padding: 0px 10%;
+}
+
+#info article {
+	padding-bottom: 4rem;
+	width: 35%;
+}
+
+#info article h1 {
+	background-color: black;
+	padding: 1rem 2rem;
+	color: white;
+}
+
+#info article p {
+	padding: .5rem 0px;
+}
+
+/* Footer */
+footer {
+	background-color: black;
+	height: 5rem;
+	color: white;
+	display: flex;
+	align-items: center;
+	padding: 0px 10%;
+}
+
+/*  Tablet Screen */
+@media only screen and (max-width:1024px) {
+
+	/* Splash */
+	#splash article {
+		margin: 0px 0px;
+	}
+
+	/* Gallery */
+	#gallery article {
+		width: 47%;
+	}
+
+	#gallery #glasses {
+		display: none;
+	}
+
+	/* Strip */
+	#strip {
+		justify-content: center;
+	}
+
+	#strip * {
+		display: none;
+	}
+
+	#strip #menu {
+		display: block;
+	}
 
 }
 
 
+/* Mobile Screen */
+@media only screen and (max-width:470px) {
+	#splash{
+		height: 15rem;
+		padding-bottom: 0px;
+	}
 
 
+	/* Splash */
+	#splash article {
+		width: 100%;
+		padding: 1rem 2rem;
+		font-size: 2rem;
+		align-self: flex-start;
+		margin: 10rem 0px;
+
+	}
+
+	#splash article h1 {
+		font-size: 1rem;
+		font-weight: bold;
+	}
+
+	#splash article h2 {
+		font-size: .77rem;
+		font-weight: bold;
+		padding-bottom: .25rem;
+	}
+
+	/* Gallery */
+	#gallery {
+		padding-right: 2rem;
+		padding-left: 2rem;
+		justify-content: center;
+	}
+
+	#gallery #watch {
+		display: none;
+	}
+
+	#gallery article {
+		width: 90%;
+	}
+
+	/* info */
+	#info {
+		justify-content: center;
+		padding: 0px 2rem;
+		flex-flow: column nowrap;
+		align-items: center;
+	}
+
+	#info article {
+		width: 90%;
+		padding: .5rem 0px;
+	}
+
+	#info article p {
+	}
+
+	/* Footer */
+	footer {
+		padding: 0px 0px;
+		text-align: center;
+		justify-content: center;
+	}
+
+}
